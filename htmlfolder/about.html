@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monicah Mwanzia - Data Scientist | Project Manager</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/form.css">
+    <style>
+        /* Custom slide-in animation */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Apply animation to the hero title */
+        .hero-title {
+            animation: slideIn 1.5s ease-out forwards;
+        }
+
+        /* Hide after animation */
+        .hide-after {
+            animation: slideIn 1.5s ease-out forwards;
+            animation-delay: 3s; /* Make it slide in, and then disappear */
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60vh;
+        }
+
+        .about-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .about-text {
+            max-width: 50%;
+            padding-left: 2rem;
+        }
+
+        .btn-primary {
+            background-color: #5a67d8;
+            color: white;
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .about-text {
+                max-width: 100%;
+                padding-left: 0;
+                padding-top: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">Monicah Mwanzia</a>
+                <ul class="flex space-x-6">
+                    <li><a href="about.html" class="nav-link hover:text-indigo-600">About</a></li>
+                    <li><a href="objective.html" class="nav-link hover:text-indigo-600">Objective</a></li>
+                    <li><a href="experience.html" class="nav-link hover:text-indigo-600">Experience</a></li>
+                    <li><a href="education.html" class="nav-link hover:text-indigo-600">Education</a></li>
+                    <li><a href="skills.html" class="nav-link hover:text-indigo-600">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link hover:text-indigo-600">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link hover:text-indigo-600">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <header class="hero-section text-center bg-gray-100 py-28 mt-20">
+                <div class="container mx-auto px-4 hero-content">
+                    <div class="hero-title">
+                        <h1 class="text-5xl font-bold mb-4 animate__animated animate__fadeIn">Hi, I'm Monicah Mwanzia</h1>
+                        <p class="text-xl mb-4">Data Scientist | Project Manager</p>
+                        <p class="text-lg mb-6">Passionate about leveraging data to solve real-world problems and make a meaningful impact.</p>
+                        <a href="contact.html" class="btn btn-primary inline-block px-6 py-3 rounded-lg">Let's Connect</a>
+                    </div>
+
+                    <div >
+                        <!-- About Image -->
+                        <img src="images/Monicah.jpg" alt="Monicah Mwanzia" class="mx-auto mt-6 w-60 h-50 object-cover rounded-full shadow-lg border-4 border-indigo-500">
+                    </div>
+                </div>
+            </header>
+
+            <!-- About Section -->
+            <section id="about" class="section bg-gray-50 py-16">
+                <div class="container mx-auto px-4">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <!-- About Image for mobile -->
+                        <div class="md:hidden mb-6">
+                            <img src="images.jpeg" alt="Monicah Mwanzia" class="about-img rounded-full">
+                        </div>
+
+                        <div class="about-text">
+                            <h2 class="text-3xl font-bold mb-6 text-center md:text-left">About Me</h2>
+                            <p class="text-lg leading-relaxed">I am a dedicated and results-driven Data Scientist and Project Manager with a passion for leveraging data analytics and strategic planning to drive business success. I bring a unique blend of analytical thinking, creativity, and leadership skills to my work.</p>
+                            <p class="mt-4 text-lg leading-relaxed">I am currently a recipient of the PLP (Power Learn Project) Scholarship, further expanding my expertise in AI, software development, and cloud computing, enabling me to apply technology in real-world problem-solving scenarios.</p>
+                            <p class="mt-4 text-lg leading-relaxed">My career goal is to use data science and predictive analytics in fields like risk management, cybersecurity, and business intelligence to empower organizations to make informed, data-driven decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2025 Monicah Mwanzia. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

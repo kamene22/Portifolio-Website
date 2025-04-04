@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Monicah Mwanzia</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/form.css">
+    <style>
+        /* Sticky Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Make the form look neat */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9fafb;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-submit {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+
+        /* Adjust form inputs */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        /* Spacing adjustments for footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <!-- Navigation Bar (Fixed at top) -->
+        <nav class="navbar">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <a href="about.html" class="text-2xl font-bold">Monicah Mwanzia</a>
+                <ul class="flex space-x-6">
+                    <li><a href="about.html" class="hover:text-indigo-600">About</a></li>
+                    <li><a href="objective.html" class="hover:text-indigo-600">Objective</a></li>
+                    <li><a href="experience.html" class="hover:text-indigo-600">Experience</a></li>
+                    <li><a href="education.html" class="hover:text-indigo-600">Education</a></li>
+                    <li><a href="skills.html" class="hover:text-indigo-600">Skills</a></li>
+                    <li><a href="projects.html" class="hover:text-indigo-600">Projects</a></li>
+                    <li><a href="contact.html" class="hover:text-indigo-600">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Contact Form Section -->
+        <main class="py-20 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl font-bold text-center mb-6">Contact Me</h1>
+                <p class="text-xl text-center mb-10">Feel free to reach out to me via the form below.</p>
+
+                <div class="contact-form">
+                    <form action="mailto:kamenemonica22@gmail.com" method="POST" enctype="multipart/form-data">
+                        <label for="name" class="block text-lg font-medium">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name" />
+
+                        <label for="email" class="block text-lg font-medium">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email Address" />
+
+                        <label for="message" class="block text-lg font-medium">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- Contact Information Section -->
+<section class="py-10 bg-white">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold mb-4">Contact Information</h2>
+        <p class="text-lg">Email: <a href="mailto:kamenemonica22@gmail.com" class="text-indigo-600 hover:underline">kamenemonica22@gmail.com</a></p>
+        <p class="text-lg">Phone: <a href="tel:+254729802407" class="text-indigo-600 hover:underline">+254729802407</a></p>
+    </div>
+</section>
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Monicah Mwanzia. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+</section>

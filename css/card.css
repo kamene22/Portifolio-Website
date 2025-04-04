@@ -1,0 +1,132 @@
+/* css/card.css */
+
+.project-card,
+.education-item,
+.experience-item,
+.skill-group {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover,
+.education-item:hover,
+.experience-item:hover,
+.skill-group:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* More pronounced hover shadow */
+}
+
+.project-card h3,
+.education-item h3,
+.experience-item h3,
+.skill-group h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.project-card p,
+.education-item p {
+    margin-bottom: 15px;
+    color: #6c757d;
+}
+
+.experience-item .duration,
+.education-item .duration {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.experience-item h4 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.experience-item ul,
+.skill-group ul {
+    list-style: disc;
+    padding-left: 25px;
+    margin-bottom: 18px;
+}
+
+.skill-group h3 {
+    margin-bottom: 18px;
+}
+
+.skill-group ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Wider min width */
+    gap: 15px;
+}
+
+.skill-group ul li {
+    background-color: #e9ecef;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-align: center;
+    color: #495057;
+    transition: background-color 0.3s ease;
+}
+
+.skill-group ul li:hover {
+    background-color: #d1d8dc;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.project-card a {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Basic CSS Skill Bars */
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-item h4 {
+    margin-bottom: 5px;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.skill-bar-container {
+    background-color: #e9ecef;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.skill-bar {
+    background-color: #28a745; /* Example skill bar color */
+    height: 100%;
+    border-radius: 6px;
+    width: 85%; /* Adjust width based on your proficiency */
+    transition: width 0.5s ease-in-out; /* Smooth animation for width changes */
+}
+
+
