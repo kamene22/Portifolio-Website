@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/form.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body class="bg-white text-gray-800">
@@ -18,7 +23,7 @@
         <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
                 <a href="#" class="text-2xl font-bold">Monicah Mwanzia</a>
-                
+
                 <!-- Hamburger Menu -->
                 <div class="md:hidden">
                     <button id="menu-toggle" class="focus:outline-none">
@@ -31,26 +36,26 @@
 
                 <!-- Links -->
                 <ul id="nav-links" class="hidden md:flex space-x-6 md:items-center">
-                    <li><a href="about.html" class="nav-link hover:text-indigo-600">About</a></li>
-                    <li><a href="objective.html" class="nav-link hover:text-indigo-600">Objective</a></li>
-                    <li><a href="experience.html" class="nav-link hover:text-indigo-600">Experience</a></li>
-                    <li><a href="education.html" class="nav-link hover:text-indigo-600">Education</a></li>
-                    <li><a href="skills.html" class="nav-link hover:text-indigo-600">Skills</a></li>
-                    <li><a href="projects.html" class="nav-link hover:text-indigo-600">Projects</a></li>
-                    <li><a href="contact.html" class="nav-link hover:text-indigo-600">Contact</a></li>
+                    <li><a href="#about" class="nav-link hover:text-indigo-600">About</a></li>
+                    <li><a href="#objective" class="nav-link hover:text-indigo-600">Objective</a></li>
+                    <li><a href="#experience" class="nav-link hover:text-indigo-600">Experience</a></li>
+                    <li><a href="#education" class="nav-link hover:text-indigo-600">Education</a></li>
+                    <li><a href="#skills" class="nav-link hover:text-indigo-600">Skills</a></li>
+                    <li><a href="#projects" class="nav-link hover:text-indigo-600">Projects</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-indigo-600">Contact</a></li>
                 </ul>
             </div>
 
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
                 <ul class="space-y-2">
-                    <li><a href="about.html" class="block hover:text-indigo-600">About</a></li>
-                    <li><a href="objective.html" class="block hover:text-indigo-600">Objective</a></li>
-                    <li><a href="experience.html" class="block hover:text-indigo-600">Experience</a></li>
-                    <li><a href="education.html" class="block hover:text-indigo-600">Education</a></li>
-                    <li><a href="skills.html" class="block hover:text-indigo-600">Skills</a></li>
-                    <li><a href="projects.html" class="block hover:text-indigo-600">Projects</a></li>
-                    <li><a href="contact.html" class="block hover:text-indigo-600">Contact</a></li>
+                    <li><a href="#about" class="block hover:text-indigo-600">About</a></li>
+                    <li><a href="#objective" class="block hover:text-indigo-600">Objective</a></li>
+                    <li><a href="#experience" class="block hover:text-indigo-600">Experience</a></li>
+                    <li><a href="#education" class="block hover:text-indigo-600">Education</a></li>
+                    <li><a href="#skills" class="block hover:text-indigo-600">Skills</a></li>
+                    <li><a href="#projects" class="block hover:text-indigo-600">Projects</a></li>
+                    <li><a href="#contact" class="block hover:text-indigo-600">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,7 +68,7 @@
                     <p class="text-xl md:text-2xl mb-3 animate-slide-in">Data Scientist | Project Manager</p>
                     <p class="text-lg mb-6 animate-slide-in">🌍 Nairobi, Kenya | 📞 +254 729802407 | ✉️ kamenemonica22@gmail.com</p>
                     <div class="space-x-4 animate-slide-in">
-                        <a href="contact.html" class="btn btn-primary inline-block">Contact Me</a>
+                        <a href="#contact" class="btn btn-primary inline-block">Contact Me</a>
                         <a href="/Monicah_Mwanzia_CV.pdf" class="btn bg-white text-indigo-600 inline-block" download>Download CV</a>
                     </div>
                 </div>
@@ -74,6 +79,50 @@
                     <h2 class="text-3xl font-bold mb-6 text-center animate-fade-in">About Me</h2>
                     <div class="max-w-3xl mx-auto animate-slide-in text-center">
                         <p>I am a dedicated and results-driven Data Scientist and Project Manager, passionate about leveraging data analytics and strategic planning to drive business success. I bring a dynamic blend of analytical thinking, creativity, and team leadership.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="objective" class="section py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold mb-6 text-center animate-fade-in">Objective</h2>
+                    <p class="max-w-3xl mx-auto text-center">My objective is to apply my expertise in data science to deliver insights that drive business strategies, while continuously growing as a professional and contributing to organizational goals.</p>
+                </div>
+            </section>
+
+            <section id="experience" class="section py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold mb-6 text-center animate-fade-in">Experience</h2>
+                    <p class="max-w-3xl mx-auto text-center">With a combination of hands-on experience and technical expertise, I have worked on various projects focused on data analysis, machine learning, and project management.</p>
+                </div>
+            </section>
+
+            <section id="education" class="section py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold mb-6 text-center animate-fade-in">Education</h2>
+                    <p class="max-w-3xl mx-auto text-center">I hold a degree in Actuarial Science, with a focus on data-driven methodologies and statistical analysis, equipping me with the skills necessary to navigate complex data challenges.</p>
+                </div>
+            </section>
+
+            <section id="skills" class="section py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold mb-6 text-center animate-fade-in">Skills</h2>
+                    <p class="max-w-3xl mx-auto text-center">I am skilled in data analysis, machine learning, Python programming, SQL, and project management. My ability to adapt and continuously learn has been a key asset in my career journey.</p>
+                </div>
+            </section>
+
+            <section id="projects" class="section py-16">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold mb-6 text-center animate-fade-in">Projects</h2>
+                    <p class="max-w-3xl mx-auto text-center">I have worked on several projects involving data analysis and machine learning, utilizing tools such as Python, SQL, and cloud technologies to deliver actionable insights.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="section py-16 bg-gray-50">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-bold mb-6 text-center animate-fade-in">Contact</h2>
+                    <div class="max-w-3xl mx-auto text-center">
+                        <p>If you would like to connect or collaborate, feel free to reach out to me via email at <strong>kamenemonica22@gmail.com</strong> or give me a call at <strong>+254 729802407</strong>.</p>
                     </div>
                 </div>
             </section>
