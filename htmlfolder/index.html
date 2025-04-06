@@ -12,12 +12,25 @@
     <link rel="stylesheet" href="css/form.css">
 </head>
 
-<body>
+<body class="bg-white text-gray-800">
     <div id="root">
+        <!-- Navigation -->
         <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
             <div class="container mx-auto px-4 py-4 flex justify-between items-center">
                 <a href="#" class="text-2xl font-bold">Monicah Mwanzia</a>
-                <ul class="flex space-x-6">
+                
+                <!-- Hamburger Menu -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Links -->
+                <ul id="nav-links" class="hidden md:flex space-x-6 md:items-center">
                     <li><a href="about.html" class="nav-link hover:text-indigo-600">About</a></li>
                     <li><a href="objective.html" class="nav-link hover:text-indigo-600">Objective</a></li>
                     <li><a href="experience.html" class="nav-link hover:text-indigo-600">Experience</a></li>
@@ -27,8 +40,22 @@
                     <li><a href="contact.html" class="nav-link hover:text-indigo-600">Contact</a></li>
                 </ul>
             </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="block hover:text-indigo-600">About</a></li>
+                    <li><a href="objective.html" class="block hover:text-indigo-600">Objective</a></li>
+                    <li><a href="experience.html" class="block hover:text-indigo-600">Experience</a></li>
+                    <li><a href="education.html" class="block hover:text-indigo-600">Education</a></li>
+                    <li><a href="skills.html" class="block hover:text-indigo-600">Skills</a></li>
+                    <li><a href="projects.html" class="block hover:text-indigo-600">Projects</a></li>
+                    <li><a href="contact.html" class="block hover:text-indigo-600">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
+        <!-- Main Content -->
         <main>
             <header id="hero" class="hero-section section text-center py-28 mt-20">
                 <div class="container mx-auto px-4">
@@ -52,12 +79,24 @@
             </section>
         </main>
 
+        <!-- Footer -->
         <footer class="bg-gray-800 text-white py-8">
             <div class="container mx-auto px-4 text-center">
                 <p>&copy; 2025 Monicah Mwanzia. All Rights Reserved.</p>
             </div>
         </footer>
     </div>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const toggleBtn = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        toggleBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
     <script src="js/script.js"></script>
 </body>
 
